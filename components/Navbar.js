@@ -8,12 +8,11 @@ export default function Navbar() {
   const { data: session } = useSession();
   const [mounted, setMounted] = useState(false);
 
-  // Ensure rendering happens only after client mount
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null; // prevent SSR mismatch
+  if (!mounted) return null;
 
   return (
     <nav className="fixed w-full z-50 backdrop-blur-md bg-white/20 shadow-md">
@@ -41,12 +40,12 @@ export default function Navbar() {
           {session ? (
             <button
               onClick={() => signOut()}
-              className="px-3 py-2 rounded-md hover:bg-blue-100 hover:text-blue-700 transition"
+              className="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-full hover:from-blue-500 hover:to-purple-500 transition"
             >
               Logout
             </button>
           ) : (
-            <Link href="/login" className="px-3 py-2 rounded-md hover:bg-blue-100 hover:text-blue-700 transition">
+            <Link href="/login" className="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-full hover:from-blue-500 hover:to-purple-500 transition">
               Login
             </Link>
           )}

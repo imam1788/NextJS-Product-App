@@ -17,7 +17,7 @@ export default function LoginPage() {
         </p>
         <button
           onClick={handleLogin}
-          className="w-full px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition"
+          className="w-full px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-full hover:from-blue-500 hover:to-purple-500 transition"
         >
           Sign in with Google
         </button>
