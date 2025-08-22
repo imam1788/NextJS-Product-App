@@ -3,6 +3,8 @@
 A modern **Next.js 15** application to display products with authentication using **NextAuth (Google Login)**.  
 Deployed on **Vercel** for production-ready hosting.  
 
+🔗 **Live Demo:** [https://nextjs-products-app.vercel.app](https://nextjs-products-app.vercel.app)
+
 ---
 
 ## 🚀 Features
