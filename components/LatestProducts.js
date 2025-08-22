@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function LatestProducts() {
   const [products, setProducts] = useState([]);
@@ -68,12 +69,12 @@ export default function LatestProducts() {
       </div>
 
       <div className="text-center mt-12">
-        <button
-          onClick={() => router.push("/products")}
-          className="px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-full hover:from-blue-500 hover:to-purple-500 transition"
+        <Link
+          href="/products"
+          className="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-full hover:from-blue-500 hover:to-purple-500 transition"
         >
           See All Products
-        </button>
+        </Link>
       </div>
     </section>
   );

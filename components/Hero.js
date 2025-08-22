@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="flex flex-col justify-center items-center text-center px-6 py-28 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white relative overflow-hidden">
@@ -10,12 +12,12 @@ export default function Hero() {
       <p className="max-w-2xl text-lg md:text-xl mb-8 drop-shadow">
         Discover amazing products at unbeatable prices. Sign in to add your own products and manage them easily!
       </p>
-      <a
+      <Link
         href="/products"
         className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
       >
         Explore Products
-      </a>
+      </Link>
     </section>
   );
 }

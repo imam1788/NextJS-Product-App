@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
@@ -50,13 +51,13 @@ export default function ProductsPage() {
               <h2 className="text-2xl font-semibold mb-2 text-gray-800">{product.name}</h2>
               <p className="text-gray-600 mb-4 line-clamp-3">{product.description}</p>
               <p className="font-bold text-blue-600 mb-2">${product.price}</p>
-              
-              <button
-                onClick={() => router.push(`/products/${product.id}`)}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 rounded-lg hover:from-purple-600 hover:to-blue-500 transition"
+
+              <Link
+                href={`/products/${product.id}`}
+                className="w-full inline-block text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 rounded-lg hover:from-purple-600 hover:to-blue-500 transition"
               >
                 View Details
-              </button>
+              </Link>
             </div>
           ))}
         </div>
