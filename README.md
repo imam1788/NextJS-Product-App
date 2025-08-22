@@ -22,3 +22,13 @@ Deployed on **Vercel** for production-ready hosting.
 - **NextAuth.js** (Google Authentication)
 - **Tailwind CSS**
 - **Vercel** (Deployment & Hosting)
+
+---
+
+## 🧪 Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/imam1788/NextJS-Product-App.git
+cd NextJS-Product-App
